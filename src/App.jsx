@@ -1,15 +1,18 @@
 import { useState } from "react";
 import { Router, Route, Routes, NavLink } from "react-router-dom";
 import "./App.css";
+import Header from "./Components/Header/Header";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contacts from "./pages/Contacts/Contacts";
 import Detels from "./pages/productDetels/Detels";
+import Catigory from "./Components/catigory/Catigory";
 
 function App() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
+      <Catigory />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>

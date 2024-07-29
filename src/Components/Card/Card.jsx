@@ -93,16 +93,34 @@ function Card(porps) {
 
   return (
     <div className="card" onClick={handleNavigate}>
-      <img src={image} alt="" />
-      <div>
-        <h5>Id: {id}</h5>
-        <h3> Name: {name}</h3>
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+            <p>Front Side</p>
+          </div>
+          <div className="card-back">
+            <div className="wrap">
+              <div
+                style={{
+                  display: "flex",
+                  gap: "15px",
+                }}
+              >
+                <img src={image} alt="" />
+                <b style={{ display: "flex", flexDirection: "column" }}>
+                  <h5>Id: {id}</h5>
+                  <h2> Name: {name}</h2>
+                  <b>
+                    <h3>newPrice: {newPrice}</h3>
+                    <h3> oldPrice: {oldPrice}</h3>
+                  </b>
+                </b>
+              </div>
+              <h2 className="comments">Comments: {comments}</h2>
+            </div>
+          </div>
+        </div>
       </div>
-      <b>
-        <h3>newPrice: {newPrice}</h3>
-        <h3> oldPrice: {oldPrice}</h3>
-      </b>
-      <h2>Comments: {comments}</h2>
     </div>
   );
 }

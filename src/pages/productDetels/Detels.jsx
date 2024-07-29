@@ -56,18 +56,23 @@ function Detels() {
 
   console.log(data);
   return (
-    <div className="container">
-      <div>
+    <div className="containerr">
+      <div className="wrapp">
         <img src={data.image} alt="" />
-        <div>
-          <h5>Id: {data.id}</h5>
-          <h3> Name: {data.name}</h3>
+        <div className="chap">
+          <div className="ssss">
+            <h5>Id: {data.id}</h5>
+            <h2> Name: {data.name}</h2>
+            <b>
+              <h3>newPrice: {data.newPrice}</h3>
+              <h3> oldPrice: {data.oldPrice}</h3>
+            </b>
+            <h2>Comments: {data.comments}</h2>
+          </div>
+          <button>
+            <a>S u b m i t</a>
+          </button>
         </div>
-        <b>
-          <h3>newPrice: {data.newPrice}</h3>
-          <h3> oldPrice: {data.oldPrice}</h3>
-        </b>
-        <h2>Comments: {data.comments}</h2>
       </div>
     </div>
   );
