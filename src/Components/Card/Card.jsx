@@ -83,7 +83,8 @@ import "./Card.css";
 import { useNavigate } from "react-router-dom";
 
 function Card(porps) {
-  const { image, name, id, oldPrice, newPrice, comments } = porps.data;
+  const { image, name, id, oldPrice, newPrice, comments, category } =
+    porps.data;
 
   const navigate = useNavigate();
 
@@ -115,6 +116,7 @@ function Card(porps) {
                     <h3> oldPrice: {oldPrice}</h3>
                   </b>
                 </b>
+                <h5>{category}</h5>
               </div>
               <h2 className="comments">Comments: {comments}</h2>
             </div>

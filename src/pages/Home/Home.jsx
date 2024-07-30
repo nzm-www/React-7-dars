@@ -29,6 +29,7 @@ function Home() {
   }, []);
   return (
     <div className="container">
+    
       {products.length > 0 &&
         products.map(function (product, index) {
           return <Card key={index} data={product} />;

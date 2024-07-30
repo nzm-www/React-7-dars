@@ -37,9 +37,17 @@
 
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { IoArrowBackSharp } from "react-icons/io5";
+
+import { useNavigate } from "react-router-dom";
 import "./Detels.css";
 
 function Detels() {
+  const navigate = useNavigate();
+  function handleNavigate() {
+    navigate("/");
+  }
+
   const { id } = useParams();
   const [data, setProduct] = useState([]);
   useEffect(() => {
@@ -69,8 +77,9 @@ function Detels() {
             </b>
             <h2>Comments: {data.comments}</h2>
           </div>
-          <button>
-            <a>S u b m i t</a>
+          <button  onClick={handleNavigate}>
+            <a>B A C K  <IoArrowBackSharp />
+</a>
           </button>
         </div>
       </div>

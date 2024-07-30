@@ -6,13 +6,12 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contacts from "./pages/Contacts/Contacts";
 import Detels from "./pages/productDetels/Detels";
-import Catigory from "./Components/catigory/Catigory";
 
 function App() {
+  
   return (
     <>
       <Header />
-      <Catigory />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
