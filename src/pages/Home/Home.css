@@ -6,3 +6,12 @@
   justify-content: space-around;
   gap: 10px;
 }
+.category-select {
+  display: flex;
+  justify-content: end;
+  padding-right: 180px;
+}
+#category {
+  background: #6a2c70;
+  color: aliceblue;
+}
